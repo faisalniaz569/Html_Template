@@ -1,0 +1,2617 @@
+/* CSS Document */
+
+@charset "utf-8";
+
+/*===== FontFamily =====*/
+@font-face {
+    font-family: myFirstFont;
+    src: url("../fontfamily/Oswald/static/Oswald-Regular.ttf");
+}
+
+@font-face {
+    font-family: mySecondFont;
+    src: url("../fontfamily/Open_Sans/static/OpenSans/OpenSans-Regular.ttf");
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+body {
+    font-family: myFirstFont;
+    font-size: 16px;
+    position: relative;
+}
+
+/* Heading */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: myFirstFont;
+}
+
+p {
+    font-family: mySecondFont;
+    line-height: 1.5;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+ul,
+ol {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Stylish Slash */
+
+#parallaxeffect .requestquote h2::before,
+#parallaxeffect .requestquote h2::after,
+#transportnews h2::before,
+#transportnews h2::after,
+#companydetails h2::before,
+#companydetails h2::after,
+#generaltransport h2::before,
+#generaltransport h2::after,
+#warehouseinfodetails h2::before,
+#warehouseinfodetails h2::after,
+.generaltransportdescription h2::before,
+.generaltransportdescription h2::after,
+#logisticgeneraltransport h2::before,
+#logisticgeneraltransport h2::after,
+#history h2::before,
+#history h2::after,
+#categories h3::before,
+#categories h3::after,
+#mainrecentpostwrap h2::before,
+#mainrecentpostwrap h2::after,
+#blog_post h3.cuslink::before,
+#blog_post h3.cuslink::after,
+.contactus h2::before,
+.contactus h2::after,
+.fillform h2::before,
+.fillform h2::after {
+    content: "\\\\";
+    vertical-align: top;
+    letter-spacing: -2px;
+}
+
+#parallaxeffect .requestquote h2::before,
+#companydetails h2::before,
+#generaltransport h2::before,
+#warehouseinfodetails h2::before,
+#logisticgeneraltransport h2::before,
+#logisticgeneraltransport h2::after,
+.generaltransportdescription h2::before,
+#history h2::before,
+#categories h3::before,
+#mainrecentpostwrap h2::before,
+#blog_post h3.cuslink::before,
+.contactus h2::before,
+.fillform h2::before {
+    margin-right: 10px;
+}
+
+#parallaxeffect .requestquote h2::after,
+#companydetails h2::after,
+#generaltransport h2::after,
+#warehouseinfodetails h2::after,
+#logisticgeneraltransport h2::after,
+.generaltransportdescription h2::after,
+#history h2::after,
+#categories h3::after,
+#mainrecentpostwrap h2::after,
+#blog_post h3.cuslink::after,
+.contactus h2::after,
+.fillform h2::after {
+    margin-left: 10px;
+}
+
+#transportnews h2::before,
+#transportnews h2::after,
+#companydetails h2::before,
+#companydetails h2::after,
+#warehouseinfodetails h2::before,
+#warehouseinfodetails h2::after,
+.generaltransportdescription h2::before,
+.generaltransportdescription h2::after,
+#logisticgeneraltransport h2::before,
+#logisticgeneraltransport h2::after,
+#history h2::before,
+#history h2::after,
+#categories h3::before,
+#categories h3::after,
+#mainrecentpostwrap h2::before,
+#mainrecentpostwrap h2::after,
+#blog_post h3.cuslink::before,
+#blog_post h3.cuslink::after,
+.contactus h2::before,
+.contactus h2::after,
+.fillform h2::before,
+.fillform h2::after {
+    color: red;
+}
+
+/*===== FontAwesome =====*/
+
+.accordion::before,
+.accordion::after,
+.accactive::before,
+ol.breadcrumb li + li:before,
+.footerinfolistone li:before,
+.footerinfolisttwo li:before,
+#testimonial .box::before,
+#testimonial .box:after,
+#missionlist .description li::before,
+#logisticservice blockquote::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+
+/*=== Container ===*/
+.container {
+    width: 1240px;
+    margin: auto;
+}
+
+/*=== All rows ===*/
+.row {
+    overflow: auto;
+}
+
+/*===== 2 Columns layout =====*/
+
+#transportnews .column,
+#testimonial .column,
+#companydetails .column,
+#history .column,
+#warehouseserviceone .column,
+#logisticservice .column,
+#logisticgeneraltransport .column {
+    width: 50%;
+    float: left;
+    padding: 5px;
+}
+
+/*===== 2 unequal columns =====*/
+
+#blog_post .left,
+#blogposttext .left,
+#blog_post2 .left,
+#contactform .column:last-child {
+    width: 70%;
+    float: left;
+    padding: 5px;
+}
+
+#blog_post .right,
+#blogposttext .right,
+#blog_post2 .right {
+    width: 30%;
+    float: right;
+    padding: 5px;
+}
+
+#contactform .column:first-child {
+    width: 30%;
+    float: left;
+    padding: 5px;
+}
+
+/*===== 3 Columns layout =====*/
+
+#feature .column,
+#detailsfooter .column,
+#missionlist .column,
+#warehouseinfodetails .column,
+#logisticgeneraltransport .column {
+    width: 33.33%;
+    float: left;
+    padding: 5px;
+}
+
+/*===== 4 Columns layout =====*/
+
+#service_text .column,
+#members .column,
+#categories .column {
+    width: 25%;
+    float: left;
+    padding: 5px;
+}
+
+
+/*===== Big Buttons =====*/
+
+.requestquote button,
+#blogposttext .contread .readmore button,
+.fillcontactform button {
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 4px;
+    transition-duration: 0.4s;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+/*===== Small Buttons =====*/
+
+#feature .gallery .description button.btn {
+    border: none;
+    padding: 12px 16px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/*===== Main Menu for all pages =====*/
+#mainmenu {
+    background-color: #034f84;
+}
+
+.tranportmenu ul {
+    overflow: hidden;
+}
+
+.tranportmenu li {
+    float: left;
+}
+
+.tranportmenu li a,
+.tranportmenu .dropdown a.dropbtn {
+    display: inline-block;
+    color: #92a8d1;
+    text-align: center;
+    font-weight: bold;
+    padding: 14px 16px;
+    text-decoration: none;
+    transform: skewX(20deg);
+    transition: all 0.3s linear 0.3s;
+    -webkit-transition: all 0.3s linear 0.3s;
+    /* Webkit */
+    -moz-transition: all 0.3s linear 0.3s;
+    /* Mozilla */
+    -ms-transition: all 0.3s linear 0.3s;
+    /* Internet Explorer */
+    -o-transition: all 0.3s linear 0.3s;
+    /* Opera */
+}
+
+.tranportmenu li a.active,
+.tranportmenu .dropdown a.active {
+    background-color: tomato;
+    color: white;
+}
+
+.tranportmenu li a:hover,
+.tranportmenu .dropdown:hover a.dropbtn,
+.tranportmenu .dropdown-content a:hover {
+    background-color: tomato;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s linear 0.3s;
+    -webkit-transition: all 0.3s linear 0.3s;
+    -moz-transition: all 0.3s linear 0.3s;
+    -ms-transition: all 0.3s linear 0.3s;
+    -o-transition: all 0.3s linear 0.3s;
+}
+
+.tranportmenu li:last-child a:hover {
+    background-color: transparent;
+    color: powderblue;
+    cursor: pointer;
+    transition: all 0.3s linear 0.3s;
+    -webkit-transition: all 0.3s linear 0.3s;
+    /* Webkit */
+    -moz-transition: all 0.3s linear 0.3s;
+    /* Mozilla */
+    -ms-transition: all 0.3s linear 0.3s;
+    /* Internet Explorer */
+    -o-transition: all 0.3s linear 0.3s;
+    /* Opera */
+}
+
+.tranportmenu li.dropdown {
+    display: inline-block;
+}
+
+.tranportmenu .dropdown-content {
+    display: none;
+    position: absolute;
+    left: 160px;
+    background-color: #034f84;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.tranportmenu .dropdown-content a {
+    color: #92a8d1;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.tranportmenu .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.tranportmenu li a p {
+    transform: skewX(-20deg);
+}
+
+
+/*===== FontAwesome =====*/
+
+.toptransportinfo .topmenubg .topmenu a::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+
+/*============================================================   
+
+        Banner For Services, About Us,
+        Warehousing, Logistic, Shop, Blog pages
+        and Contact pages
+
+============================================================*/
+
+.services, .warehouse, .logistic, .about,
+.shop, .blog, .contact {
+    position: absolute;
+    bottom: 0;
+    left: 50px;
+}
+
+.services, .warehouse {
+    width: 225px;
+}
+
+.logistic {
+    width: 250px;
+}
+
+#services_title, #warehousing_title, #logistic_title,
+#about_title, #shop_title, #blog_title,
+#contact_title {
+    background: #eeeee6 url(../img/bg01.jpg) no-repeat center;
+    height: 270px;
+    background-size: cover;
+    position: relative;
+}
+
+#services_title .image_overlay, #warehousing_title .image_overlay,
+#logistic_title .image_overlay, #about_title .image_overlay, #shop_title .image_overlay,
+#blog_title .image_overlay, #contact_title .image_overlay {
+    content: attr(x);
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(238, 238, 238, 0.8);
+    width: 100%;
+    height: 100%;
+}
+
+.entry_title {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
+#services_title .entry_title h1, #warehousing_title .entry_title h1,
+#logistic_title .entry_title h1, #about_title .entry_title h1,
+#shop_title .entry_title h1, #blog_title .entry_title h1,
+#contact_title .entry_title h1 {
+    font: 700 48px myFirstFont;
+    color: #111;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    text-align: left;
+}
+
+#services_title svg, #warehousing_title svg,
+#logistic_title svg, #about_title svg, #shop_title svg,
+#blog_title svg, #contact_title svg {
+    position: absolute;
+    bottom: 0;
+    width: 45px;
+    height: 45px;
+}
+
+#services_title svg, #warehousing_title svg {
+    left: 275px;
+}
+
+#logistic_title svg {
+    left: 300px;
+}
+
+#about_title svg {
+    left: 233px;
+}
+
+#shop_title svg {
+    left: 200px;
+}
+
+#blog_title svg {
+    left: 320px;
+}
+
+#contact_title svg {
+    left: 245px;
+}
+
+/* Breadcumb format */
+.services ol.breadcrumb, .warehouse ol.breadcrumb,
+.logistic ol.breadcrumb, .about ol.breadcrumb, .shop ol.breadcrumb,
+.blog ol.breadcrumb, .contact ol.breadcrumb {
+    margin: 0;
+    padding: 10px 14px;
+    list-style: none;
+    background-color: #232331;
+}
+
+ol.breadcrumb li {
+    display: inline;
+    font-size: 16px;
+}
+
+ol.breadcrumb li + li:before {
+    padding: 8px;
+    color: white;
+    content: "\f061";
+}
+
+ol.breadcrumb li a {
+    color: white;
+    text-decoration: none;
+    font-family: mySecondFont;
+    font-size: 17px;
+}
+
+
+/*==================================
+
+	       Index Page
+
+==================================*/
+
+/* Head part start */
+
+#head {
+    position: relative;
+    width: 100%;
+    height: 150px;
+}
+
+#head::before {
+    content: attr(x);
+    position: absolute;
+    top: 35%;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    border: 1px solid #511515;
+    z-index: -1;
+}
+
+.mainlogobanner .logobg {
+    width: 30%;
+    height: 150px;
+    background-color: #a0b4f0;
+    padding: 50px 0;
+    display: inline-block;
+}
+
+.mainlogobanner .logobg .mainLogo {
+    content: attr(x);
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 18px;
+    width: 30%;
+}
+
+.mainlogobanner .logobg .siteBrand {
+    padding: 50px 0;
+}
+
+.siteBrand img {
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mainlogobanner svg {
+    position: absolute;
+    top: 0;
+    left: 30%;
+}
+
+.mainlogobanner svg polygon {
+    fill: #a0b4f0;
+    stroke: none;
+}
+
+.toptransportinfo .topmenubg .topmenu {
+    position: absolute;
+    top: 15px;
+    width: 100%;
+    text-align: center;
+    padding-left: 35px;
+}
+
+.toptransportinfo .topmenubg .topmenu a {
+    color: #333;
+    font: normal 400 15px mySecondFont;
+    text-align: center;
+    text-decoration: none;
+    padding-right: 20px;
+    cursor: auto;
+}
+
+.toptransportinfo .topmenubg .topmenu a::after {
+    content: "\f30b";
+    color: #333;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+#socialMenu {
+    position: absolute;
+    right: 50px;
+    top: 0;
+    overflow: hidden;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#socialMenu a {
+    float: left;
+    display: block;
+    padding: 15px 15px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    color: #457b9d;
+}
+
+#socialMenu a,
+#socialMenu a:hover {
+    transition: all 0.3s linear 0.1s;
+    -webkit-transition: all 0.3s linear 0.1s;
+    /* Webkit */
+    -moz-transition: all 0.3s linear 0.1s;
+    /* Mozilla */
+    -ms-transition: all 0.3s linear 0.1s;
+    /* Internet Explorer */
+    -o-transition: all 0.3s linear 0.1s;
+    /* Opera */
+}
+
+/* 1st icon: Facebook hover effect */
+#socialMenu a:first-child {
+    color: #3b5998;
+    /* facebook color */
+}
+
+#socialMenu a:hover:first-child {
+    background-color: #3b5998;
+}
+
+/* 2nd icon: Google PLus hover effect */
+#socialMenu a:nth-child(2) {
+    color: #dd4b39;
+    /* goolge-plus color */
+}
+
+#socialMenu a:hover:nth-child(2) {
+    background-color: #dd4b39;
+}
+
+/* 3rd icon: Twitter hover effect */
+#socialMenu a:nth-child(3) {
+    color: #55acee;
+    /* twitter color */
+}
+
+#socialMenu a:hover:nth-child(3) {
+    background-color: #55acee;
+}
+
+/* 4th icon: Youtube hover effect */
+#socialMenu a:nth-child(4) {
+    color: #cd201f;
+    /* youtube color */
+}
+
+#socialMenu a:hover:nth-child(4) {
+    background-color: #cd201f;
+}
+
+/* 5th icon: Vimeo-square hover effect */
+#socialMenu a:nth-child(5) {
+    color: #1ab7ea;
+    /* vimeo-square color */
+}
+
+#socialMenu a:hover:nth-child(5) {
+    background-color: #1ab7ea;
+}
+
+/* 6th icon: Dribbble hover effect */
+#socialMenu a:nth-child(6) {
+    color: #ea4c89;
+    /* dribbble color */
+}
+
+#socialMenu a:hover:nth-child(6) {
+    background-color: #ea4c89;
+}
+
+#socialMenu a:hover:first-child,
+#socialMenu a:hover:nth-child(2),
+#socialMenu a:hover:nth-child(3),
+#socialMenu a:hover:nth-child(4),
+#socialMenu a:hover:nth-child(5),
+#socialMenu a:hover:nth-child(6) {
+    color: white;
+    cursor: pointer;
+}
+
+#socialMenu a:hover:last-child {
+    background-color: #ea4c89;
+    color: white;
+    cursor: pointer;
+}
+
+#socialMenu a::before {
+    content: attr(x);
+    position: absolute;
+    top: 0;
+    left: 12px;
+    width: 1px;
+    height: 55px;
+    border-left: 1px solid #333;
+    transform: skew(20deg, 0);
+}
+
+#socialMenu a::after {
+    content: attr(x);
+    position: absolute;
+    top: 0;
+    right: 12px;
+    width: 1px;
+    height: 55px;
+    border-right: 1px solid #333;
+    transform: skew(20deg, 0);
+}
+
+
+#bottomaddress {
+    position: absolute;
+    top: 70px;
+    right: 30px;
+}
+
+#bottomaddress .fulladdressfour .bottomone,
+#bottomaddress .fulladdressfour .bottomtwo,
+#bottomaddress .fulladdressfour .bottomthree,
+#bottomaddress .fulladdressfour .bottomfour {
+    width: 25%;
+    float: left;
+    padding-left: 25px;
+}
+
+#bottomaddress .fulladdressfour .bottomone .icons,
+#bottomaddress .fulladdressfour .bottomtwo .icons,
+#bottomaddress .fulladdressfour .bottomthree .icons,
+#bottomaddress .fulladdressfour .bottomfour .icons {
+    width: 10%;
+    float: left;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.fulladdressfour i {
+    font-size: x-large;
+    margin-right: 10px;
+    color: #f7786b;
+}
+
+#bottomaddress .fulladdressfour .bottomone .addresstext,
+#bottomaddress .fulladdressfour .bottomtwo .addresstext,
+#bottomaddress .fulladdressfour .bottomthree .addresstext,
+#bottomaddress .fulladdressfour .bottomfour .addresstext {
+    width: 90%;
+    float: left;
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 20px;
+}
+
+
+/* Head part end */
+
+#formsearchbar {
+    position: relative;
+    display: none;
+    z-index: 1;
+}
+
+#formsearchbar form.example {
+    position: absolute;
+    right: 75px;
+}
+
+form.example input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid white;
+    float: left;
+    width: 80%;
+    background: white;
+    border-radius: 0;
+    margin-top: 0;
+}
+
+form.example button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: #92a8d1;
+    color: #034f84;
+    font-size: 17px;
+    border: 1px solid #92a8d1;
+    border-left: none;
+    cursor: pointer;
+}
+
+
+form.example ::placeholder {
+    color: black;
+    opacity: 1;
+}
+
+/* Firefox */
+
+form.example :-ms-input-placeholder {
+    color: chocolate;
+    opacity: 1;
+}
+
+/* Internet Explorer 10-11 */
+
+form.example ::-ms-input-placeholder {
+    color: chocolate;
+    opacity: 1;
+}
+
+/* Microsoft Edge */
+
+
+/* Slider Customization */
+
+.slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+.mySlides img {
+    vertical-align: middle;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.slideactive {
+    background-color: red;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/*===== feature section =====*/
+
+#feature {
+    margin: 50px 0;
+    height: auto;
+}
+
+#feature .gallery {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border: 1px solid #e7e7e7;
+    height: 570px;
+    margin-bottom: 30px;
+}
+
+#feature .gallery img {
+    width: 100%;
+    height: 300px;
+}
+
+#feature .gallery .imageprofile {
+    position: relative;
+    height: 300px;
+}
+
+#feature .gallery .iconblock {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+#feature .iconblock i {
+    background-color: #f7786b;
+    color: #f7cac9;
+    font-size: xx-large;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+}
+
+#feature .gallery .imageprofile svg polygon { fill: #f7786b; stroke: none; }
+
+#feature .gallery .imageprofile svg {
+    position: absolute;
+    bottom: 0;
+    left: 100px;
+}
+
+.description {
+    text-align: justify;
+}
+
+.text_area {
+    padding: 25px;
+}
+
+#feature .gallery .description button.btn {
+    background-color: #347b98;
+    color: #e3f7d4;
+}
+
+
+/*===== Parallax Scroll Effect =====*/
+
+#parallaxeffect {
+    position: relative;
+    height: 530px;
+}
+
+
+.parallax {
+    background: transparent url(../img/parallax.jpg) no-repeat fixed center;
+    min-height: 530px;
+    background-size: cover;
+}
+
+.maintextarea {
+    width: 100%;
+    height: 530px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.maintextarea .empty {
+    width: 50%;
+    float: left;
+    background-color: transparent;
+    height: 530px;
+}
+
+.maintextarea .requestquote {
+    width: 50%;
+    float: right;
+    background-color: #537aac;
+    color: #a0b4f0;
+    height: 530px;
+    padding: 20px 50px;
+}
+
+.maintextarea .requestquote p {
+    text-indent: 30px;
+    margin: 10px 0;
+    text-align: justify;
+    color: #bacade;
+    line-height: 1.5;
+}
+
+.maintextarea .requestquote .col-50 {
+    width: 50%;
+    float: left;
+    padding-right: 5px;
+}
+
+.maintextarea .requestquote .col-50:last-child {
+    padding-right: 0;
+}
+
+input[type=text], input[type=email], input[type=tel], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+#parallaxeffect textarea {
+    width: 100%;
+    height: 150px;
+    color: white;
+    box-sizing: border-box;
+    border-radius: 4px;
+    resize: none;
+}
+
+.requestquote button {
+    width: 100%;
+    position: relative;
+    background-color: lightblue;
+    color: #3a5578;
+}
+
+.requestquote button::after {
+    content: "";
+    background: #f1f1f1;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -40px;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s;
+}
+
+.requestquote button:active::after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s;
+}
+
+#parallaxeffect svg {
+    position: absolute;
+    top: 0;
+    left: 475px;
+    height: 530px;
+}
+
+/*===== Transport Section =====*/
+
+#transportnews {
+    color: #da200b;
+    margin: 50px 0;
+}
+
+#transportnews h2 {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.chooseus,
+.latestNews,
+#warehouseinfodetails .contact,
+#generaltransportdescription,
+#logisticgeneraltransport .contact {
+    position: relative;
+}
+
+#transportnews h2::before,
+#transportnews h2::after,
+.latestNews h2::before,
+.latestNews h2::after,
+#warehouseinfodetails .contact h2::before,
+#warehouseinfodetails .contact h2::after,
+.generaltransportdescription h2::before,
+.generaltransportdescription h2::after {
+    position: absolute;
+    top: 0;
+}
+
+#transportnews h2::before,
+.latestNews h2::before {
+    left: 30%;
+}
+
+#transportnews h2::after,
+.latestNews h2::after {
+    right: 30%;
+}
+
+/* Accordion design start */
+
+#mainaccordion {
+    margin: 20px 20px 20px 0;
+}
+
+.accordion {
+    background-color: #92a8d1;
+    color: #034f84;
+    position: relative;
+    cursor: pointer;
+    width: 100%;
+    padding: 0;
+    border: 1px solid #c9d4e8;
+    text-align: left;
+    outline: none;
+    font-family: myFirstFont;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 50px;
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+}
+
+.accactive,
+.accordion:hover {
+    background-color: khaki;
+    color: darkgoldenrod;
+    border: 1px solid darkkhaki;
+}
+
+.accordion::before {
+    content: '\f061';
+    color: #92a8d1;
+    font-weight: bold;
+    text-align: center;
+    background-color: #034f84;
+    float: left;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    margin-right: 50px;
+}
+
+.accordion:hover::before,
+.accactive::before {
+    background-color: saddlebrown;
+    color: burlywood;
+}
+
+.accordion::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50px;
+    border-left: 25px solid #034f84;
+    background: transparent;
+    border-top: 50px solid transparent;
+}
+
+.accordion:hover::after,
+.accactive::after {
+    border-left: 25px solid saddlebrown;
+}
+
+.accactive::before {
+    content: '\f063';
+    text-align: center;
+}
+
+.panel {
+    padding: 0 18px;
+    margin-bottom: 20px;
+    background-color: white;
+    border: 1px solid darkkhaki;
+    font-family: mySecondFont;
+    text-align: justify;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s ease-out;
+    -webkit-transition: max-height 1s ease-out;
+    /* Webkit */
+    -moz-transition: max-height 1s ease-out;
+    /* Mozilla */
+    -ms-transition: max-height 1s ease-out;
+    /* Internet Explorer */
+    -o-transition: max-height 1s ease-out;
+    /* Opera */
+}
+
+#transportnews .panel p {
+    padding: 20px 0;
+    color: #222;
+}
+
+.latestNews div img {
+    float: left;
+    width: 200px;
+    height: auto;
+    margin: 0 20px 20px 0;
+}
+
+.clearfix {
+    overflow: auto;
+}
+
+.latestNews h3 {
+    margin-bottom: 10px;
+    padding-top: 25px;
+    text-align: left;
+}
+
+.latestNews .postmeta span {
+    font-family: mySecondFont;
+    margin-right: 10px;
+}
+
+
+/*==================================
+
+		Services Page
+
+==================================*/
+
+#service_text {
+    background-color: #a0b4f0;
+    padding: 50px;
+}
+
+#service_text .box {
+    height: 450px;
+    padding: 20px 20px;
+    border-radius: 20px;
+}
+
+#service_text .column:first-child .box {
+    background: linear-gradient(45deg, #036eb7, #55abe4);
+}
+
+#service_text .column:nth-child(2) .box {
+    background: linear-gradient(45deg, #e91e63, #ed55ff);
+}
+
+#service_text .column:nth-child(3) .box {
+    background: linear-gradient(45deg, #086d35, #00ff72);
+}
+
+#service_text .column:nth-child(4) .box {
+    background: linear-gradient(45deg, #f05a4f, #f4c030);
+}
+
+#service_text .column:first-child .box,
+#service_text .column:nth-child(2) .box,
+#service_text .column:nth-child(3) .box,
+#service_text .column:nth-child(4) .box,
+#testimonial_banner {
+    margin-right: 20px;
+}
+
+#service_text .box h1 {
+    margin: 0;
+    padding: 0;
+    font-family: myFirstFont;
+    font-size: 100px;
+    color: white;
+    text-align: center;
+    opacity: 0.4;
+}
+
+#service_text .box h3,
+#service_text .box p {
+    font-family: mySecondFont;
+    text-align: justify;
+}
+
+#service_text .box h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#service_text .box p {
+    text-align: center;
+}
+
+/* Testimonial Box */
+
+#testimonial {
+    text-align: center;
+    position: relative;
+    background-color: #cbcbcb;
+    padding: 50px;
+}
+
+#testimonial .box {
+    position: relative;
+    height: 300px;
+    padding: 80px 40px 40px;
+    transition: 0.5s;
+    text-align: center;
+    background-color: white;
+    border-radius: 5px;
+    margin: 100px auto;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+#testimonial img {
+    content: attr(x);
+    position: absolute;
+    top: 150px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+#testimonial .box:hover {
+    background-color: coral;
+    color: saddlebrown;
+    box-shadow: 5px 5px 15px #dbdbdb;
+    transition: 0.5s;
+    font-weight: bold;
+}
+
+#testimonial .box::before,
+#testimonial .box:after {
+    font-size: 60px;
+    position: absolute;
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    background-size: cover;
+    pointer-events: none;
+    transition: 0.5s;
+    opacity: 0.2;
+}
+
+#testimonial .box::before {
+    content: '\f10e';
+    top: 10px;
+    right: 40px;
+}
+
+#testimonial .box:after {
+    content: '\f10d';
+    bottom: 10px;
+    left: 40px;
+}
+
+#testimonial .box:hover:before {
+    transform: translateY(-100px);
+}
+
+#testimonial .box:hover:after {
+    transform: translateY(100px);
+}
+
+#testimonial .box:hover:before,
+#testimonial .box:hover:after {
+    color: white;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+/*==================================
+
+			About Us Page
+
+==================================*/
+
+.about svg {
+    left: 238px;
+}
+
+#companydetails h2 {
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 25px;
+}
+
+#companydetails p {
+    font-family: mySecondFont;
+    text-align: justify;
+    user-select: none;
+    margin-bottom: 10px;
+    margin-right: 25px;
+}
+
+#companydetails p.firstletter {
+    text-indent: 50px;
+}
+
+#companyinfo,
+#skillinfo {
+    padding: 50px 0;
+}
+
+#companydetails button {
+    font-size: 16px;
+    text-decoration: none;
+    text-align: center;
+    display: inline;
+    margin: 4px 0px;
+    padding: 15px 32px;
+    cursor: pointer;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+}
+
+#companydetails button {
+    background-color: #f7786b;
+    color: #f7cac9;
+    border: 1px solid #f7786b;
+    font-weight: 600;
+}
+
+/* SkillBar */
+
+#skillinfo .containerskillbar {
+    width: 100%;
+    background-color: #ddd;
+}
+
+#skillinfo p {
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+.containerskillbar .skills {
+    text-align: right;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: white;
+}
+
+.grt {
+    width: 90%;
+    background-color: #04AA6D;
+}
+
+.crg {
+    width: 80%;
+    background-color: #2196F3;
+}
+
+.wh {
+    width: 65%;
+    background-color: #f44336;
+}
+
+.ls {
+    width: 60%;
+    background-color: #808080;
+}
+
+#missionlist {
+    background: linear-gradient(to bottom right, #a0b4f0 0%, #1c41b0 100%);
+    padding: 50px;
+    color: #0a1842;
+}
+
+.missiondetails {
+    width: 100%;
+    padding-right: 20px;
+}
+
+#missionlist img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+#missionlist h2 {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+#missionlist h2::before {
+    content: '\\\\\\\\';
+    vertical-align: top;
+    letter-spacing: -5px;
+    margin-right: 20px;
+}
+
+#missionlist p,
+.description li span {
+    font-family: mySecondFont;
+    font-weight: 600;
+}
+
+.description li span {
+    letter-spacing: -0.5px;
+}
+
+.description ul {
+    list-style-position: inside;
+}
+
+.description li {
+    float: none;
+    margin-top: 15px;
+}
+
+#missionlist .description li::before {
+    content: '\f061';
+    margin-right: 10px;
+    font-size: 15px;
+}
+
+#history {
+    position: relative;
+    padding: 50px;
+}
+
+#history h2 {
+    text-transform: uppercase;
+}
+
+#history p {
+    font-family: mySecondFont;
+    margin: 20px 20px 0 0;
+    line-height: 1.5;
+}
+
+/* Quote Slideshow */
+
+.quoteslideshow {
+    position: relative;
+    background: papayawhip;
+}
+
+/* Slides */
+.quoteSlides {
+    display: none;
+    padding: 80px;
+    text-align: center;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: 0px;
+    padding: 16px;
+    color: #432109;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    position: absolute;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dotcircle {
+    text-align: center;
+    padding: 20px;
+    background: #342e09;
+}
+
+/* The dots/bullets/indicators */
+.dotround {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.quoteactive,
+.dotround:hover {
+    background-color: greenyellow;
+}
+
+/* Add an italic font style to all quotes */
+q {
+    font-style: italic;
+    color: sienna;
+}
+
+/* Add a blue color to the author */
+.author {
+    color: sienna;
+    float: right;
+}
+
+#members {
+    background-color: #a0b4f0;
+    padding: 50px;
+    color: #0a1842;
+    font-weight: 700;
+}
+
+#members img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px 5px 0 0;
+}
+
+.card {
+    width: 100%;
+    -webkit-box-shadow: 0px 4px 8px 0 #5f7acb;
+    box-shadow: 0px 4px 8px 0 #5f7acb;
+    background-color: rgba(160, 180, 240, 0.2);
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 #222;
+    transition: 0.3s;
+}
+
+.card .wrapper {
+    padding: 0 16px;
+}
+
+.card .wrapper::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.card .wrapper h4 {
+    color: #0a1842;
+    margin-top: 10px;
+}
+
+#members p {
+    margin-bottom: 20px;
+}
+
+#members p#two {
+    font-family: mySecondFont;
+    font-size: 14px;
+}
+
+#transportvideo .column:first-child {
+    width: 80%;
+    float: left;
+    padding: 5px;
+}
+
+#transportvideo .column:last-child {
+    width: 20%;
+    float: left;
+    padding: 5px;
+}
+
+#transportvideo {
+    padding: 50px 0;
+}
+
+#transportvideo p {
+    font-family: mySecondFont;
+    text-align: justify;
+    padding-right: 170px;
+}
+
+#transportvideo p span,
+#warehouseinfodetails .generaltransportdescription p span,
+#logisticgeneraltransport .transportside p span,
+#companydetails #companyinfo p span {
+    float: left;
+    width: 0.7em;
+    font-size: 400%;
+    font-family: algerian, courier;
+    line-height: 80%;
+    color: #153184;
+}
+
+
+/*==================================
+
+			Shop Page
+
+==================================*/
+
+.shop svg {
+    left: 205px;
+}
+
+#search_widget .column:first-child,
+#search_widget .column:last-child {
+    width: 25%;
+    float: left;
+}
+
+#search_widget .column:nth-child(2) {
+    width: 50%;
+    float: left;
+}
+
+#search_widget {
+    padding: 50px 0;
+}
+
+#search_widget form.example input[type=text],
+#blog_post form.example input[type=text] {
+    width: 80%;
+    float: left;
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid #236ab9;
+    background-color: white;
+    color: black;
+    margin-bottom: 20px;
+}
+
+#search_widget input::placeholder,
+#blog_post input::placeholder {
+    color: #103156;
+}
+
+#search_widget .custom-select {
+    width: 200px;
+    float: right;
+}
+
+#search_widget .custom-select select {
+    padding: 12px;
+    margin-right: 10px;
+    float: right;
+    display: block;
+    font-size: 14px;
+    border: 1px solid #f7786b;
+    background-color: #f7786b;
+    color: white;
+    font-weight: 700;
+}
+
+#categories {
+    position: relative;
+}
+
+.widget_title {
+    margin-right: 30px;
+}
+
+.widget_title h3 {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.widgetlistgroup ul li {
+    border-bottom: 1px solid #ddd;
+    font-family: mySecondFont;
+    padding: 10px 0;
+}
+
+.widgetlistgroup ul li span {
+    float: right;
+}
+
+.product_captions {
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+.caption h4 {
+    text-transform: uppercase;
+}
+
+.caption p.price {
+    color: #ca1f26;
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.checked {
+    color: orange;
+}
+
+#categories .buttongroup {
+    position: relative;
+}
+
+#categories .buttongroup button {
+    font-size: 16px;
+    text-decoration: none;
+    text-align: center;
+    display: inline;
+    margin: 4px 0px;
+    padding: 15px 32px;
+    cursor: pointer;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+}
+
+#categories .buttongroup button {
+    background-color: #008cba;
+    border: 1px solid #008cba;
+    color: lightblue;
+    font-weight: 600;
+}
+
+#categories .buttongroup svg {
+    content: attr(x);
+    position: absolute;
+    top: 4px;
+    left: 150px;
+    width: 50px;
+    height: 50px;
+}
+
+#categories .buttongroup polygon {
+    fill: #008cba;
+    stroke: 1px solid #008cba;
+}
+
+.topproductlist {
+    overflow: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    display: block;
+}
+
+.topproductlist span {
+    margin-top: 30px;
+    margin-left: 20px;
+    display: inline-block;
+}
+
+.topproductlist p {
+    display: block;
+    margin-left: 120px;
+}
+
+.product_title img {
+    float: left;
+    width: 100px;
+    height: 100px;
+}
+
+
+/*==================================
+
+			Blog Page
+
+==================================*/
+
+#blog_post,
+#blog_post2 {
+    padding: 20px 0;
+}
+
+/* Blogpost Image 01 */
+#blog_post .blogpostimg {
+    background: url(../img/post-image_01.jpg) no-repeat center;
+}
+
+/* Blogpost Image 02 */
+#blog_post2 .blogpostimg {
+    background: url(../img/services03.jpg) no-repeat center;
+}
+
+#blog_post .blogpostimg,
+#blog_post2 .blogpostimg {
+    position: relative;
+    background-color: transparent;
+    height: 460px;
+    background-size: cover;
+    margin-right: 10px;
+}
+
+.blogpostimg .dates {
+    position: absolute;
+    bottom: 0;
+    background-color: #fba90a;
+    width: 120px;
+    height: 120px;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.blogpostimg .dates span.month,
+.blogpostimg .dates span.date,
+.blogpostimg .dates span.year {
+    text-align: center;
+    font-family: mySecondFont;
+    font-weight: 600;
+    color: #342609;
+    display: block;
+}
+
+.blogpostimg .dates span.date {
+    font-family: myFirstFont;
+    color: #342609;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.blogpostimg svg {
+    position: absolute;
+    bottom: 0;
+    left: 120px;
+    width: 120px;
+    height: 120px;
+}
+
+.blogpostimg polygon {
+    fill: #fba90a;
+    stroke: none;
+}
+
+#mainrecentpostwrap .recentpost {
+    overflow: auto;
+    display: block;
+    margin-bottom: 25px;
+}
+
+#mainrecentpostwrap .recentpost img.img1 {
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin-right: 10px;
+}
+
+#mainrecentpostwrap .recentpost p {
+    display: block;
+    padding: 25px 5px 0 25px;
+}
+
+#blogposttext {
+    position: relative;
+    margin-bottom: 30px;
+    color: #da200b;
+}
+
+.blogpost_heading h3 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+#blogposttext .postdetails span {
+    font-family: mySecondFont;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#blogposttext .postdetails a {
+    text-decoration: none;
+    color: #924d3a;
+    font-weight: bold;
+}
+
+#blogposttext .postexpect p {
+    text-indent: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#blogposttext .contread .readmore {
+    position: absolute;
+    top: 170px;
+}
+
+#blogposttext .contread .readmore button {
+    background-color: #f7786b;
+    color: #f7cac9;
+}
+
+#blogposttext .contread .readicons {
+    position: absolute;
+    top: 170px;
+    right: 33%;
+}
+
+.contread .readicons .rightsocialicons {
+    float: right;
+}
+
+#blogposttext .contread .readicons .rightsocialicons a {
+    text-decoration: none;
+    float: left;
+    text-align: center;
+    font-size: 14px;
+    padding: 6px 10px;
+}
+
+#blogposttext .contread svg {
+    position: absolute;
+    top: 122px;
+    right: 445px;
+}
+
+.blogpost_cuslink h3 {
+    text-transform: uppercase;
+    color: #da200b;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#blogposttext .linklistgroup ul li {
+    border-bottom: 1px double #ddd;
+    background-color: white;
+    padding: 10px 0;
+    font-family: mySecondFont;
+}
+
+/* Pagination */
+
+#blog_pagination .pagination {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+#blog_pagination .pagination a {
+    color: #000;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    border: 1px solid #ddd;
+}
+
+#blog_pagination .pagination a.active {
+    background-color: red;
+    color: white;
+    border: 1px solid red;
+}
+
+
+/*==================================
+
+        Warehousing Page
+
+==================================*/
+
+/* Widget Sidebar */
+
+.widgetsidebar {
+    position: relative;
+    margin: 50px 20px 50px 0;
+}
+
+.widgetsidebar ul li {
+    border: 1px solid #91a8ee;
+    width: 100%;
+    float: left;
+    margin-bottom: 10px;
+    line-height: 65px;
+}
+
+.widgetsidebar ul li:hover {
+    border: 1px solid #f7d4e3;
+    color: #ca1f26;
+    transition: 0.3s;
+}
+
+.widgetsidebar ul li i {
+    float: left;
+    color: #153184;
+    font-size: 24px;
+    background-color: #91a8ee;
+    width: 65px;
+    height: 65px;
+    line-height: 65px;
+    text-align: center;
+}
+
+.widgetsidebar ul li:hover i {
+    background-color: #f7d4e3;
+    color: #C21460;
+    transition: 0.3s;
+}
+
+.widgetsidebar ul li:hover h3 {
+    color: #c21460;
+}
+
+.widgetsidebar ul li:first-child svg,
+.widgetsidebar ul li:nth-child(2) svg,
+.widgetsidebar ul li:nth-child(3) svg,
+.widgetsidebar ul li:last-child svg {
+    position: absolute;
+    left: 65px;
+    width: 65px;
+    height: 65px;
+}
+
+.widgetsidebar ul li:first-child svg {
+    top: 1px;
+}
+
+.widgetsidebar ul li:last-child svg {
+    top: 78px;
+}
+
+.widgetsidebar ul li polygon {
+    fill: #91a8ee;
+    stroke: none;
+}
+
+.widgetsidebar ul li:hover polygon,
+.widgetsidebar ul li.widgetserviceactive polygon {
+    fill: #f7d4e3;
+    stroke: #f7d4e3;
+}
+
+.widgetsidebar h3 {
+    text-align: center;
+    color: #153184;
+}
+
+.widgetsidebar ul li.widgetserviceactive {
+    border: 1px solid #f7d4e3;
+}
+
+.widgetsidebar ul li.widgetserviceactive i {
+    background-color: #f7d4e3;
+    color: #C21460;
+}
+
+.widgetsidebar ul li.widgetserviceactive h3 {
+    color: #C21460;
+}
+
+/* Carousel Slider */
+
+.wrapper {
+    margin: 50px 0;
+}
+
+.contact i {
+    margin-right: 5px;
+}
+
+.contact p {
+    margin-top: 10px;
+}
+
+.generaltransportdescription {
+    position: relative;
+    margin-right: 10px;
+    word-spacing: -0.90px;
+}
+
+.generaltransportdescription p {
+    line-height: 2;
+    padding: 10px 10px 10px 0;
+    text-align: justify;
+}
+
+#generaltransport {
+    padding: 50px 0;
+    background-color: #a0b4f0;
+    color: #18399a;
+}
+
+#generaltransport h2::before,
+#generaltransport h2::after {
+    color: #e6aa37;
+}
+
+#warehouseinfodetails {
+    padding: 50px 0;
+}
+
+#warehousedescriptiondetails .column:first-child {
+    width: 30%;
+    float: left;
+}
+
+#warehousedescriptiondetails .column:last-child {
+    width: 70%;
+    float: left;
+}
+
+#generaltransport .borderimg {
+    border: 10px solid transparent;
+    padding: 15px;
+    border-image: url(../img/border.png) 30% round;
+}
+
+
+/*==================================
+
+			Logistic Page
+
+==================================*/
+
+#logisticservice blockquote {
+    background-color: #f7786b;
+    position: relative;
+    margin: 50px 0;
+    padding: 60px 30px 50px 50px;
+    border-top: 2px solid #f7786b;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #b11d1b;
+    letter-spacing: .05rem;
+}
+
+#logisticservice blockquote::before {
+    content: '\f10d';
+    position: absolute;
+    top: -2px;
+    left: 0;
+    background-color: #b11d1b;
+    color: #f7786b;
+    font-size: 18px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+}
+
+#logisticservice blockquote svg {
+    position: absolute;
+    top: -2px;
+    left: 40px;
+    width: 40px;
+    height: 40px;
+}
+
+#logisticservice blockquote polygon {
+    fill: #b11d1b;
+    stroke: #b11d1b;
+    stroke-width: 1;
+}
+
+/* Tab Design */
+
+#logistictransport {
+    padding: 20px 0 40px 0;
+    background-color: #a0b4f0;
+}
+
+#logistictransport .tab {
+    overflow: hidden;
+    border: 1px solid #153184;
+    background-color: #153184;
+}
+
+/* Style the buttons inside the tab */
+
+#logistictransport .tab button {
+    background-color: inherit;
+    color: #7b97ea;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 600;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+/* Change background color of buttons on hover in Tab and Create an active/current tablink class */
+#logistictransport .tab button:hover,
+#logistictransport .tab button.tabactive {
+    background-color: #d4f7ec;
+    color: #448d76;
+    font-weight: 700;
+}
+
+/* Style the tab content */
+
+#logistictransport .tabcontent {
+    display: none;
+    border: 1px solid #153184;
+    border-top: none;
+    padding: 6px 12px;
+    -webkit-animation: fadeEffect 1s;
+    animation: fadeEffect 1s;
+}
+
+#logistictransport .tabcontent h3 {
+    color: #1c41b0;
+}
+
+#logistictransport .tabcontent p {
+    color: #18399a;
+    margin: 20px 0;
+    text-align: justify;
+    text-indent: 30px;
+}
+
+/* Style the close button */
+
+#logistictransport .topright {
+    float: right;
+    cursor: pointer;
+    font-size: 28px;
+    color: #a0b4f0;
+    background-color: #153184;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    text-align: center;
+}
+
+#logistictransport .topright:hover {
+    color: red;
+}
+
+/* Fade in tabs */
+@-webkit-keyframes fadeEffect {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeEffect {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+#logisticgeneraltransport {
+    padding: 50px 0;
+}
+
+#logisticgeneraltransport p {
+    text-align: justify;
+    margin-right: 15px;
+}
+
+/*==================================
+
+			Contact Page
+
+==================================*/
+
+.contact svg {
+    left: 250px;
+}
+
+#contactform {
+    position: relative;
+    padding: 30px 0;
+}
+
+.fillcontactform .column:first-child,
+.fillcontactform .column:last-child {
+    width: 50% !important;
+    padding: 5px 10px 0px 0px;
+}
+
+.fillcontactform input[type=text],
+.fillcontactform input[type=email],
+.fillcontactform input[type=tel],
+.fillcontactform textarea {
+    width: 100%;
+    padding: 12px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin: 10px 0;
+    resize: vertical;
+}
+
+.fillcontactform textarea {
+    height: 150px;
+    color: #333;
+    box-sizing: border-box;
+    resize: none;
+}
+
+#contactform input::placeholder,
+#contactform textarea::placeholder {
+    color: #2e2759;
+}
+
+.fillcontactform button {
+    width: 100%;
+    background-color: tomato;
+    color: white;
+}
+
+.contactus,
+.fillform {
+    position: relative;
+}
+
+.contact_information p {
+    padding-top: 8px;
+}
+
+.contact_information p i {
+    margin-right: 10px;
+}
+
+
+/*===== Footer Top =====*/
+
+#detailsfooter {
+    background-color: #a0b4f0;
+    color: #034f84;
+}
+
+#detailsfooter img {
+    width: 50%;
+    height: auto;
+}
+
+.foot_title {
+    border-bottom: 1px solid #11286e;
+    margin: 25px 25px 25px 0;
+    position: relative;
+}
+
+#detailsfooter p {
+    font: 700 15px mySecondFont;
+    text-align: justify;
+    line-height: 1.5;
+    margin: 10px 25px 10px 0;
+}
+
+#detailsfooter .officeinfo span {
+    margin-left: 10px;
+} 
+
+.foot_title h2 {
+    background-color: #11286e;
+    display: inline-block;
+    color: #a7b9f1;
+    padding: 10px 25px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.foot_title svg {
+    content: attr(x);
+    position: absolute;
+    top: 0;
+    width: 50px;
+    height: 50px;
+}
+
+.foot_title svg polygon {
+    fill: #11286e;
+    stroke: transparent;
+    stroke-width: none;
+}
+
+#detailsfooter span i {
+    color: #034f84;
+    font-size: 20px;
+    margin-right: 10px;
+    margin-bottom: 25px;
+}
+
+#detailsfooter span i:hover {
+    color: lightcyan;
+    cursor: pointer;
+    transform: rotate(360deg);
+}
+
+#detailsfooter span i,
+#detailsfooter span i:hover {
+    transition: all 0.3s linear 0.1s;
+    -webkit-transition: all 0.3s linear 0.1s;
+    /* Webkit */
+    -moz-transition: all 0.3s linear 0.1s;
+    /* Mozilla */
+    -ms-transition: all 0.3s linear 0.1s;
+    /* Internet Explorer */
+    -o-transition: all 0.3s linear 0.1s;
+    /* Opera */
+}
+
+.footerinfolistone {
+    width: 50%;
+    float: left;
+}
+
+.footerinfolisttwo {
+    width: 50%;
+    float: right;
+}
+
+.footerinfolistone > ul > li,
+.footerinfolisttwo > ul > li {
+    float: none;
+    display: block;
+    color: #034f84;
+    text-align: left;
+    padding-bottom: 10px;
+    text-decoration: none;
+    font: 700 16px mySecondFont;
+}
+
+.footerinfolistone li:before,
+.footerinfolisttwo li:before {
+    content: '\f30b';
+    color: #034f84;
+    margin-right: 10px;
+}
+
+/* Sidenav Buttons */
+
+#mySidenav a {
+    position: fixed;
+    left: -80px;
+    transition: 0.3s;
+    padding: 15px;
+    width: 100px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    z-index: 2;
+}
+
+#mySidenav a:hover {
+    left: 0;
+}
+
+#facebook {
+    top: 250px;
+    background-color: #3b5998;
+}
+
+#googleplus {
+    top: 310px;
+    background-color: #dd4b39;
+}
+
+#twitter {
+    top: 370px;
+    background-color: #55acee;
+}
+
+#linkedin {
+    top: 430px;
+    background-color: #007bb5;
+}
+
+/*===== Footer =====*/
+
+#footer {
+    position: relative;
+    background-color: #3862e0;
+    border-top: 1px solid #1c41b0;
+    height: 170px;
+}
+
+#footer .mainheart .madeheart {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30%;
+    height: 100%;
+    background-color: #1c41b0;
+    color: #a7b9f1;
+}
+
+#footer .mainheart .madeheart span, 
+#footer .copyright span {
+    margin-left: 60px;
+    line-height: 10;
+}
+
+#footer svg {
+    position: absolute;
+    top: 0;
+    left: 405px;
+    width: 100px;
+    height: 169px;
+}
+
+#footer .copyright {
+    position: absolute;
+    top: 0;
+    right: 5%;
+    color: #a7b9f1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
