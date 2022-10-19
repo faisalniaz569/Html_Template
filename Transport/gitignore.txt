@@ -1,0 +1,6 @@
+test.txt
+.env
+*.txt
+!main.txt
+test?.txt
+temp/
