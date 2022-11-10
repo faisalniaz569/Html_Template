@@ -744,7 +744,7 @@ ol.breadcrumb li a {
 .fulladdressfour i {
     font-size: x-large;
     margin-right: 10px;
-    color: #f7786b;
+    color: #843115;
 }
 
 #bottomaddress .fulladdressfour .bottomone .addresstext,
@@ -907,8 +907,8 @@ form.example ::-ms-input-placeholder {
 }
 
 #feature .iconblock i {
-    background-color: #f7786b;
-    color: #f7cac9;
+    background-color: #f0b4a0;
+    color: #843115;
     font-size: xx-large;
     text-align: center;
     width: 100px;
@@ -916,7 +916,7 @@ form.example ::-ms-input-placeholder {
     line-height: 100px;
 }
 
-#feature .gallery .imageprofile svg polygon { fill: #f7786b; stroke: none; }
+#feature .gallery .imageprofile svg polygon { fill: #f0b4a0; stroke: none; }
 
 #feature .gallery .imageprofile svg {
     position: absolute;
@@ -933,8 +933,8 @@ form.example ::-ms-input-placeholder {
 }
 
 #feature .gallery .description button.btn {
-    background-color: #347b98;
-    color: #e3f7d4;
+    background-color: #486ee2;
+    color: white;
 }
 
 
@@ -969,8 +969,8 @@ form.example ::-ms-input-placeholder {
 .maintextarea .requestquote {
     width: 50%;
     float: right;
-    background-color: #537aac;
-    color: #a0b4f0;
+    background-color: #f0b4a0;
+    color: #aa2b00;
     height: 530px;
     padding: 20px 50px;
 }
@@ -979,7 +979,7 @@ form.example ::-ms-input-placeholder {
     text-indent: 30px;
     margin: 10px 0;
     text-align: justify;
-    color: #bacade;
+    color: #aa2b00;
     line-height: 1.5;
 }
 
@@ -1016,8 +1016,8 @@ input[type=text], input[type=email], input[type=tel], textarea {
 .requestquote button {
     width: 100%;
     position: relative;
-    background-color: lightblue;
-    color: #3a5578;
+    background-color: #aa2b00;
+    color: white;
 }
 
 .requestquote button::after {
@@ -1050,7 +1050,7 @@ input[type=text], input[type=email], input[type=tel], textarea {
 /*===== Transport Section =====*/
 
 #transportnews {
-    color: #da200b;
+    color: black;
     margin: 50px 0;
 }
 
@@ -1098,8 +1098,8 @@ input[type=text], input[type=email], input[type=tel], textarea {
 }
 
 .accordion {
-    background-color: #92a8d1;
-    color: #034f84;
+    background-color: #a0f0b4;
+    color: #0a4218;
     position: relative;
     cursor: pointer;
     width: 100%;
@@ -1118,19 +1118,19 @@ input[type=text], input[type=email], input[type=tel], textarea {
     -o-transition: 0.4s;
 }
 
-.accactive,
+.accactive, 
 .accordion:hover {
-    background-color: khaki;
-    color: darkgoldenrod;
+    background-color: #dcf0a0;
+    color: #46580e;
     border: 1px solid darkkhaki;
 }
 
 .accordion::before {
     content: '\f061';
-    color: #92a8d1;
+    color: #90eea8;
     font-weight: bold;
     text-align: center;
-    background-color: #034f84;
+    background-color: #0a4218;
     float: left;
     width: 50px;
     height: 50px;
@@ -1140,8 +1140,8 @@ input[type=text], input[type=email], input[type=tel], textarea {
 
 .accordion:hover::before,
 .accactive::before {
-    background-color: saddlebrown;
-    color: burlywood;
+    background-color: #46580e;
+    color: #dcf0a0;
 }
 
 .accordion::after {
@@ -1149,14 +1149,14 @@ input[type=text], input[type=email], input[type=tel], textarea {
     position: absolute;
     top: 0;
     left: 50px;
-    border-left: 25px solid #034f84;
+    border-left: 25px solid #0a4218;
     background: transparent;
     border-top: 50px solid transparent;
 }
 
 .accordion:hover::after,
 .accactive::after {
-    border-left: 25px solid saddlebrown;
+    border-left: 25px solid #46580e;
 }
 
 .accactive::before {
@@ -1312,7 +1312,7 @@ input[type=text], input[type=email], input[type=tel], textarea {
 
 #testimonial .box:hover {
     background-color: coral;
-    color: saddlebrown;
+    color: navajowhite;
     box-shadow: 5px 5px 15px #dbdbdb;
     transition: 0.5s;
     font-weight: bold;
@@ -1406,9 +1406,9 @@ input[type=text], input[type=email], input[type=tel], textarea {
 }
 
 #companydetails button {
-    background-color: #f7786b;
-    color: #f7cac9;
-    border: 1px solid #f7786b;
+    background-color: #a0f0b4;
+    color: #0a4218;
+    border: 1px solid #a0f0b4;
     font-weight: 600;
 }
 
@@ -1452,7 +1452,7 @@ input[type=text], input[type=email], input[type=tel], textarea {
 }
 
 #missionlist {
-    background: linear-gradient(to bottom right, #a0b4f0 0%, #1c41b0 100%);
+    background: linear-gradient(to bottom right, #a0b4f0 0%, #486ee2 100%);
     padding: 50px;
     color: #0a1842;
 }
@@ -1740,9 +1740,9 @@ q {
     float: right;
     display: block;
     font-size: 14px;
-    border: 1px solid #f7786b;
-    background-color: #f7786b;
-    color: white;
+    border: 1px solid #a0f0b4;
+    background-color: #a0f0b4;
+    color: #0a4218;
     font-weight: 700;
 }
 
@@ -1944,7 +1944,7 @@ q {
 #blogposttext {
     position: relative;
     margin-bottom: 30px;
-    color: #da200b;
+    color: black;
 }
 
 .blogpost_heading h3 {
@@ -1960,7 +1960,7 @@ q {
 
 #blogposttext .postdetails a {
     text-decoration: none;
-    color: #924d3a;
+    color: red;
     font-weight: bold;
 }
 
@@ -1976,8 +1976,8 @@ q {
 }
 
 #blogposttext .contread .readmore button {
-    background-color: #f7786b;
-    color: #f7cac9;
+    background-color: #a0f0b4;
+    color: #0a4218;
 }
 
 #blogposttext .contread .readicons {
@@ -2006,7 +2006,7 @@ q {
 
 .blogpost_cuslink h3 {
     text-transform: uppercase;
-    color: #da200b;
+    color: red;
     margin-top: 20px;
     margin-bottom: 20px;
 }
@@ -2079,8 +2079,8 @@ q {
 }
 
 .widgetsidebar ul li:hover i {
-    background-color: #f7d4e3;
-    color: #C21460;
+    background-color: #f0b4a0;
+    color: #843115;
     transition: 0.3s;
 }
 
@@ -2111,10 +2111,10 @@ q {
     stroke: none;
 }
 
-.widgetsidebar ul li:hover polygon,
+.widgetsidebar ul li:hover polygon, 
 .widgetsidebar ul li.widgetserviceactive polygon {
-    fill: #f7d4e3;
-    stroke: #f7d4e3;
+    fill: #f0b4a0;
+    stroke: #f0b4a0;
 }
 
 .widgetsidebar h3 {
@@ -2127,8 +2127,8 @@ q {
 }
 
 .widgetsidebar ul li.widgetserviceactive i {
-    background-color: #f7d4e3;
-    color: #C21460;
+    background-color: #f0b4a0;
+    color: #843115;
 }
 
 .widgetsidebar ul li.widgetserviceactive h3 {
@@ -2163,8 +2163,8 @@ q {
 
 #generaltransport {
     padding: 50px 0;
-    background-color: #a0b4f0;
-    color: #18399a;
+    background-color: #a0f0b4;
+    color: #0a4218;
 }
 
 #generaltransport h2::before,
@@ -2200,14 +2200,14 @@ q {
 ==================================*/
 
 #logisticservice blockquote {
-    background-color: #f7786b;
+    background-color: #a0f0b4;
     position: relative;
     margin: 50px 0;
     padding: 60px 30px 50px 50px;
-    border-top: 2px solid #f7786b;
+    border-top: 2px solid #a0f0b4;
     font-size: 1rem;
     font-weight: 600;
-    color: #b11d1b;
+    color: #0a4218;
     letter-spacing: .05rem;
 }
 
@@ -2216,8 +2216,8 @@ q {
     position: absolute;
     top: -2px;
     left: 0;
-    background-color: #b11d1b;
-    color: #f7786b;
+    background-color: #0a4218;
+    color: #a0f0b4;
     font-size: 18px;
     width: 40px;
     height: 40px;
@@ -2234,8 +2234,8 @@ q {
 }
 
 #logisticservice blockquote polygon {
-    fill: #b11d1b;
-    stroke: #b11d1b;
+    fill: #0a4218;
+    stroke: #0a4218;
     stroke-width: 1;
 }
 
@@ -2248,15 +2248,15 @@ q {
 
 #logistictransport .tab {
     overflow: hidden;
-    border: 1px solid #153184;
-    background-color: #153184;
+    border: 1px solid #11286e;
+    background-color: #11286e;
 }
 
 /* Style the buttons inside the tab */
 
 #logistictransport .tab button {
     background-color: inherit;
-    color: #7b97ea;
+    color: #bdcbf5;
     float: left;
     border: none;
     outline: none;
@@ -2287,11 +2287,11 @@ q {
 }
 
 #logistictransport .tabcontent h3 {
-    color: #1c41b0;
+    color: #18399a;
 }
 
 #logistictransport .tabcontent p {
-    color: #18399a;
+    color: #11286e;
     margin: 20px 0;
     text-align: justify;
     text-indent: 30px;
@@ -2415,8 +2415,8 @@ q {
 /*===== Footer Top =====*/
 
 #detailsfooter {
-    background-color: #a0b4f0;
-    color: #034f84;
+    background-color: #f0dca0;
+    color: #42340a;
 }
 
 #detailsfooter img {
@@ -2425,7 +2425,7 @@ q {
 }
 
 .foot_title {
-    border-bottom: 1px solid #11286e;
+    border-bottom: 1px solid #42340a;
     margin: 25px 25px 25px 0;
     position: relative;
 }
@@ -2442,9 +2442,9 @@ q {
 } 
 
 .foot_title h2 {
-    background-color: #11286e;
+    background-color: #42340a;
     display: inline-block;
-    color: #a7b9f1;
+    color: #f0dca0;
     padding: 10px 25px;
     text-align: center;
     text-transform: uppercase;
@@ -2461,20 +2461,20 @@ q {
 }
 
 .foot_title svg polygon {
-    fill: #11286e;
+    fill: #42340a;
     stroke: transparent;
     stroke-width: none;
 }
 
 #detailsfooter span i {
-    color: #034f84;
+    color: #42340a;
     font-size: 20px;
     margin-right: 10px;
     margin-bottom: 25px;
 }
 
 #detailsfooter span i:hover {
-    color: lightcyan;
+    color: red;
     cursor: pointer;
     transform: rotate(360deg);
 }
@@ -2506,7 +2506,7 @@ q {
 .footerinfolisttwo > ul > li {
     float: none;
     display: block;
-    color: #034f84;
+    color: #42340a;
     text-align: left;
     padding-bottom: 10px;
     text-decoration: none;
@@ -2516,7 +2516,7 @@ q {
 .footerinfolistone li:before,
 .footerinfolisttwo li:before {
     content: '\f30b';
-    color: #034f84;
+    color: #42340a;
     margin-right: 10px;
 }
 
@@ -2563,8 +2563,8 @@ q {
 
 #footer {
     position: relative;
-    background-color: #3862e0;
-    border-top: 1px solid #1c41b0;
+    background-color: #e3be4f;
+    border-top: 1px solid #e0b638;
     height: 170px;
 }
 
@@ -2574,8 +2574,8 @@ q {
     left: 0;
     width: 30%;
     height: 100%;
-    background-color: #1c41b0;
-    color: #a7b9f1;
+    background-color: darkgoldenrod;
+    color: khaki;
 }
 
 #footer .mainheart .madeheart span, 
@@ -2596,7 +2596,7 @@ q {
     position: absolute;
     top: 0;
     right: 5%;
-    color: #a7b9f1;
+    color: #42340a;
 }
 
 
