@@ -95,22 +95,22 @@ p {
 
 .mySidebutton .facebook {
     top: 250px;
-    background-color: #3b5998;
+    background-color: #1877f2;
 }
 
 .mySidebutton .googleplus {
     top: 310px;
-    background-color: #dd4b39;
+    background-color: #db4437;
 }
 
 .mySidebutton .twitter {
     top: 370px;
-    background-color: #55acee;
+    background-color: #1da1f2;
 }
 
 .mySidebutton .linkedin {
     top: 430px;
-    background-color: #007bb5;
+    background-color: #0a66c2;
 }
 
 .mySidebutton a:hover {
@@ -222,7 +222,7 @@ button {
 
 .Left_skewdropdownmenu li a, .dropbtn {
     display: block;
-    color: burlywood;
+    color: white;
     text-align: center;
     padding: 14px;
     text-decoration: none;
@@ -240,15 +240,15 @@ button {
 .Left_skewdropdownmenu li a:hover:not(.active),
 .Left_skewdropdownmenu li a:hover,
 .dropdown:hover .dropbtn {
-    background-color: Chartreuse;
-    color: forestgreen;
+    background-color: #e6bb9c;
+    color: #5D4037;
     font-weight: bold;
     cursor: pointer;
 }
 
 .Left_skewdropdownmenu li a.active {
-    background-color: Chartreuse;
-    color: forestgreen;
+    background-color: #e6bb9c;
+    color: #5D4037;
     font-weight: bold;
 }
 
@@ -258,6 +258,7 @@ button {
 }
 
 .Left_skewdropdownmenu li.split:hover a {
+    color: #e6bb9c;
     background-color: transparent;
 }
 
@@ -287,7 +288,7 @@ button {
 /*=== HEAD ===*/
 #head {
     background-color: #deccaa;
-    color: #553f14;
+    color: #5a3e2b;
     height: auto;
     text-align: center;
     padding: 50px;
@@ -325,19 +326,19 @@ button {
 }
 
 .topsocialicons .fab:nth-child(1):hover {
-    background-color: #3b5998;
+    background-color: #1877f2;
 }
 
 .topsocialicons .fab:nth-child(2):hover {
-    background-color: #dd4b39;
+    background-color: #db4437;
 }
 
 .topsocialicons .fab:nth-child(3):hover {
-    background-color: #55acee;
+    background-color: #1da1f2;
 }
 
 .topsocialicons .fab:nth-child(4):hover {
-    background-color: #cd201f;
+    background-color: red;
 }
 
 .topsocialicons .fab:nth-child(5):hover {
@@ -457,7 +458,7 @@ button {
 }
 
 .iconblock i {
-    color: #bccad6;
+    color: #b0c4de;
     padding: 35px;
     font-size: 30px;
     text-align: center;
@@ -474,10 +475,17 @@ button {
 }
 
 .btn1 {
-    background-color: #FBA90A;
-    color: #342609;
+    background-color: #f8ac3a;
+    color: white;
     margin: 5px 0;
     font-weight: 600;
+    transition: all 1s ease;
+}
+
+.btn1:hover {
+    background-color: LightSeaGreen;
+    color: ivory;
+    transition: all 1s ease;
 }
 
 .btn3 {
@@ -485,6 +493,11 @@ button {
     color: white;
     margin: 5px 0;
     font-weight: 600;
+}
+
+.btn3:hover {
+    background-color: rebeccapurple;
+    color: white;
 }
 
 .type svg {
@@ -535,7 +548,7 @@ button {
     width: 50%;
     height: 100%;
     padding: 20px 50px;
-    color: #383016;
+    color: #3d2b1f;
 }
 
 .maintextarea p {
@@ -561,8 +574,8 @@ textarea {
 
 .btn2 {
     width: 100%;
-    background-color: #102d06;
-    color: white;
+    background-color: #0b6623;
+    color: beige;
     font-weight: 600;
     border-radius: 4px;
     text-transform: capitalize;
@@ -613,7 +626,7 @@ textarea {
     outline: none;
     font-family: myFirstFont;
     font-size: 15px;
-    font-weight: 700;
+    font-weight: 500;
     line-height: 50px;
     transition: 0.4s;
     -webkit-transition: 0.4s;
@@ -622,11 +635,10 @@ textarea {
     -o-transition: 0.4s;
 }
 
-.accactive,
-.accordion:hover {
-    background-color: #5EFC8D;
-    color: #037d27;
-    border: 1px solid #5EFC8D;
+.accactive, .accordion:hover {
+    background-color: #5efc8d;
+    color: #02641f;
+    border: 1px solid #5efc8d;
 }
 
 .accordion::before {
@@ -634,7 +646,7 @@ textarea {
     color: white;
     font-weight: bold;
     text-align: center;
-    background-color: #001a33;
+    background-color: navy;
     float: left;
     width: 50px;
     height: 50px;
@@ -644,7 +656,7 @@ textarea {
 
 .accordion:hover::before,
 .accactive::before {
-    background-color: #183425;
+    background-color: #00875a;
     color: white;
 }
 
@@ -653,14 +665,13 @@ textarea {
     position: absolute;
     top: 0;
     left: 50px;
-    border-left: 25px solid #001a33;
+    border-left: 25px solid navy;
     background: transparent;
     border-top: 50px solid transparent;
 }
 
-.accordion:hover::after,
-.accactive::after {
-    border-left: 25px solid #183425;
+.accordion:hover::after, .accactive::after {
+    border-left: 25px solid #00875a;
 }
 
 .accactive::before {
@@ -709,12 +720,33 @@ textarea {
     line-height: 40px;
 }
 
+.transportnews .smallImgtxt i.fa-user {
+    background-color: #D66459;
+    color: white;
+    padding: 14px;
+    font-weight: bold;
+}
+
+.transportnews .smallImgtxt i.fa-clock {
+    background-color: #98CA32;
+    color: white;
+    padding: 14px;
+    font-weight: bold;
+}
+
+.transportnews .smallImgtxt i.fa-comments {
+    background-color: #0C8FC7;
+    color: white;
+    padding: 14px;
+    font-weight: bold;
+}
+
 
 /*===  transportdetails section ===*/
 
 .transportdetails {
     background-color: #bccad6;
-    color: #166780;
+    color: #34495e;
 }
 
 .aboutus, .information, .transportoffice {
@@ -727,7 +759,7 @@ textarea {
 }
 
 .foot_title1, .foot_title2, .foot_title3 {
-    background-color: #667292;
+    background-color: #4B3869;
     width: 150px;
     height: 50px;
     padding: 5px 15px;
@@ -760,7 +792,7 @@ textarea {
 }
 
 .foot_title1 svg polygon, .foot_title2 svg polygon, .foot_title3 svg polygon {
-    fill: #667292;
+    fill: #4B3869;
     stroke: transparent;
 }
 
@@ -777,8 +809,7 @@ textarea {
 }
 
 .transportdetails span i:hover {
-    color: darkorange;
-    font-weight: bold;
+    color: #27ae60;
     cursor: pointer;
     transform: rotate(360deg);
     transition: all 0.3s linear 0.1s;
@@ -793,7 +824,7 @@ textarea {
 .footerinfolistone > ul > li,
 .footerinfolisttwo > ul > li {
     display: block;
-    color: #166780;
+    color: #34495e;
     text-align: left;
     padding-bottom: 10px;
     text-decoration: none;
@@ -937,8 +968,8 @@ textarea {
 }
 
 .servicesareaanimation {
-    background: linear-gradient(to right, #cfe0e8 30%, #b7d7e8 70%);
-    color: #193299;
+    background: linear-gradient(to right, #87CEEB 30%, #66c1e5 70%);
+    color: #003366;
     height: 540px;
     padding: 30px 0;
     position: relative;
@@ -961,7 +992,7 @@ textarea {
 }
 
 .servicesareaanimation .fa-cloud {
-    color: #64B5F6;
+    color: #DDE7EE;
     font-size: 30px;
     position: absolute;
 }
@@ -998,13 +1029,13 @@ textarea {
 
 .servicesareaanimation .group_A .fa-home, .servicesareaanimation .group_B .fa-home,
 .servicesareaanimation .group_C .fa-home {
-    color: #7a001a;
+    color: #000080;
 }
 
 .servicesareaanimation .group_A .fa-city,
 .servicesareaanimation .group_B .fa-city,
 .servicesareaanimation .group_C .fa-city {
-    color: firebrick;
+    color: #CE8946;
 }
 
 
@@ -1014,11 +1045,12 @@ textarea {
 .servicesareaanimation .group_A .fa-hospital-alt,
 .servicesareaanimation .group_B .fa-hospital-alt,
 .servicesareaanimation .group_C .fa-hospital-alt {
-    color: #0a4443;
+    color: #006400;
 }
 
 hr.new1 {
-    border-top: 110px solid #909090;
+    background: linear-gradient(to top, #5a5a5a 0%, #8a8a8a 100%);
+    height: 110px;
 }
 
 p.new2,
@@ -1561,8 +1593,8 @@ q {
 
 .warehouseborderdecoration {
     padding: 30px 0;
-    background-color: #806a00;
-    color: #ffc86e;
+    background-color: #5d4037;
+    color: #fff5e1;
 }
 
 .warehouseborderdecoration .borderimg {
