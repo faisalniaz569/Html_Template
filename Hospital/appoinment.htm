@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Faisal niaz">
+    <title>SoulMedic Hospital</title>
+
+    <!--Title icon-->
+    <link rel="shortcut icon" href="img/logo1.png" type="image/x-icon" />
+
+    <!--css stylesheet for nice design-->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <!--css for Animation-->
+    <link rel="stylesheet" href="css/aos.css" />
+
+    <!--icon-->
+    <script src="icon/icon5.js"></script>
+</head>
+
+<body>
+
+    <!--Headtop-->
+    <div class="headtop">
+        <div class="container">
+            <div class="row">
+                <div class="column">
+                    <div class="policies">
+                        <ul>
+                            <li><a href="#">Terms <span>|</span></a></li>
+                            <li><a href="#">Privacy Policy <span>|</span></a></li>
+                            <li><a href="#">Legal Agreement</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="topbarcontact">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <i class='fas fa-phone-square-alt'></i>
+                                    <span>1 (800) 567 8765</span>
+                                    <span>|</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class='fas fa-envelope'></i>
+                                    <span>name@example.com</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Menubar-->
+    <div class="menubar">
+        <div class="container">
+            <div class="row">
+                <a href="#default" class="logo"><img src="img/logo.png" alt="logo"></a>
+                <div class="menuright">
+                    <a href="index.htm">Home</a>
+                    <a href="doctorlist.htm">Doctor</a>
+                    <a class="active" href="appoinment.htm">Appointments</a>
+                    <a href="blog.htm">Blog</a>
+                    <a href="events.htm">Events</a>
+                    <a href="contact.htm">Contact</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--breadcumbwrapper-->
+    <div class="breadcumbwrapper">
+        <div class="container">
+            <div class="row">
+                <div class="column">
+                    <!--breadcrumb-->
+                    <div class="breadcrumb">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Appointments</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="column">
+                    <!--searchbutton-->
+                    <form class="example" action="#">
+                        <input type="text" placeholder="Search.." name="search">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Appointmentpaper-->
+    <div class="appointmentpaper">
+        <div class="container">
+            <div class="row">
+                <div class="column">
+
+                    <div class="appoinmentformpaper" data-aos="fade-up">
+                        <h3 style="margin-bottom: 10px;">Appointment Form</h3>
+
+                        <div class="form-group">
+                            <label>Select a Department</label>
+                            <select>
+                                <option>Gynecology</option>
+                                <option>Cardiology</option>
+                                <option>Neurology</option>
+                            </select>
+                        </div>
+                        <div class="form-group half">
+                            <label>Your First Name (required)</label>
+                            <input type="text">
+                        </div>
+                        <div class="form-group half">
+                            <label>Your Last Name (required)</label>
+                            <input type="text">
+                        </div>
+                        <div class="form-group half" style="margin-left: 0;">
+                            <label>Date of Birth (required)</label>
+                            <input type="date">
+                        </div>
+                        <div class="form-group half" style="width: 50%; margin-left: 10px;">
+                            <label>&nbsp; &nbsp; Sex (required)</label>
+                            <div class="radio-group">
+                                <input type="radio" name="sex"> Male
+                                <input type="radio" name="sex"> Female
+                                <input type="radio" name="sex"> Child
+                            </div>
+                        </div>
+                        <div class="form-group half" style="width: 48%;margin-left: 0px;float: left; clear: both;">
+                            <label for="email">Your Email (required)</label>
+                            <input type="email" id="email" name="email">
+                        </div>
+                        <div class="form-group half" style="width: 48%;margin-left: 10px;float: right;">
+                            <label for="phone">Phone (required)</label>
+                            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Your message (optional)</label>
+                            <textarea id="message" name="message" cols="30" rows="10" style="resize: none;"></textarea>
+                        </div>
+
+                        <button type="button">Submit</button>
+                    </div>
+
+                </div>
+
+                <div class="column">
+
+                    <div class="bookingappoinmentbox" data-aos="fade-up">
+                        <h3 style="margin-bottom: 10px;">Book an Appointment: </h3>
+
+                        <p>Book your appointment easily! Apply now to see a doctor by selecting a time that suits you.</p>
+
+                        <div class="appointment_box">
+                            <div class="icon"><i class="fas fa-phone"></i></div>
+                            <div class="text">Phone : +1 200 258 2145</div>
+                        </div>
+
+                        <div class="appointment_box">
+                            <div class="icon"><i class="fas fa-envelope"></i></div>
+                            <div class="text">Email : <a href="mailto:yourname@somemail.com">yourname@somemail.com</a></div>
+                        </div>
+
+                        <div class="appointment_box">
+                            <div class="icon"><i class="fas fa-pencil-alt"></i></div>
+                            <div class="text">Online Form : <a href="#">Fill out this form</a></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Hospitalmedia-->
+    <div class="hospitalmedia">
+        <div class="container">
+            <div class="row">
+                <div class="column">
+                    <div class="emergencynumber" data-aos="fade-up" data-aos-duration="5000">
+                        <p style="margin-bottom: 10px;">
+                            An emergency number is a communication system used to get immediate help in a dangerous or emergency situation. It usually connects quickly to various emergency services, including ambulances, fire services, and police.
+                        </p>
+                        <img src="img/logo1.png" alt="logo" width="80px" style="float: left; margin-right: 10px;">
+                        <h4 style="font-size: x-large; line-height: 1.6;">
+                            Soul Medical Hospital
+                        </h4>
+                        <h6 style="font-size: medium;">+880188446755000</h6>
+                    </div>
+                </div>
+                <div class="column">
+                    <address data-aos="fade-up" data-aos-duration="4000" style="line-height: 1.6;">
+                        <strong>The Soul Medic Hospital</strong><br>
+                        Cambridge Square, 3463 Pine Ridge Road Suite 101,<br>
+                        Naples, FL 34109, United States<br>
+                        <br>
+                        <i class="fas fa-phone-alt"></i> &nbsp; <a href="#" style="text-decoration: none; color: #fcd5b5;">833-12345678</a><br>
+                        <i class="fas fa-globe"></i> &nbsp; <a href="#" style="text-decoration: none; color: #fcd5b5;">The Soulmedic</a>
+                    </address>
+                </div>
+                <div class="column">
+                    <img src="img/soulmedicalhospitalmap.webp" alt="map" width="100%" height="280" data-aos="fade-up" data-aos-duration="3000" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <div class="footer">
+        <p>copyright &copy; 2019, Soulmedic Hospital. All Rights Reserved. </p>
+    </div>
+
+    <!-- Scroll to Top Button -->
+    <section id="scrollTopbtn">
+        <button onclick="topFunction()" id="myBtn" title="Go to top">
+            <i class='fas fa-angle-up'></i>
+        </button>
+    </section>
+
+
+
+    <!--js for animation-->
+    <script src="js/aos.js"></script>
+    <script>
+        AOS.init({
+
+            offset: 120, // offset (in px) from the original trigger point
+            delay: 0, // values from 0 to 3000, with step 50ms
+            duration: 2000, // values from 0 to 3000, with step 50ms
+            easing: 'ease', // default easing for AOS animations
+            once: false, // whether animation should happen only once - while scrolling down
+            mirror: false, // whether elements should animate out while scrolling past them
+            anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+        });
+
+    </script>
+
+    <!--JavaScript-->
+    <script src="js/myscript.js"></script>
+</body>
+
+</html>
