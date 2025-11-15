@@ -1,26 +1,62 @@
-// Quote Slide
-var slideIndex, i, slides, dots;
+/* Quote Slide */
+/* jslint browser: true */
+/* global document, setTimeout, window */
 
-slideIndex = 0;
-showSlides();
+var document, setTimeout, window;
 
-function showSlides() {
-    slides = document.getElementsByClassName("quoteSlides");
-    dots = document.getElementsByClassName("dotround");
-    for (i = 0; i < slides.length; i += 1) {
-        slides[i].style.display = "none";
+(function () {
+    "use strict";
+
+    var slideIndex = 0;
+
+    function showSlides() {
+        var i, slides, dots;
+        slides = document.getElementsByClassName("quoteSlides");
+        dots = document.getElementsByClassName("dotround");
+
+        for (i = 0; i < slides.length; i += 1) {
+            slides[i].style.display = "none";
+        }
+
+        slideIndex += 1;
+
+        if (slideIndex > slides.length) {
+            slideIndex = 1;
+        }
+
+        for (i = 0; i < dots.length; i += 1) {
+            dots[i].className = dots[i].className.replace(" quoteactive", "");
+        }
+
+        if (slides[slideIndex - 1]) {
+            slides[slideIndex - 1].style.display = "block";
+        }
+
+        if (dots[slideIndex - 1]) {
+            dots[slideIndex - 1].className += " quoteactive";
+        }
+
+        setTimeout(showSlides, 2000);
     }
-    slideIndex++;
 
-    if (slideIndex > slides.length) {
-        slideIndex = 1
+    // Manual navigation
+    function plusSlides(n) {
+        slideIndex += (n - 1);
+        if (slideIndex < 0) {
+            slideIndex = 0;
+        }
+        showSlides();
     }
 
-    for (i = 0; i < dots.length; i += 1) {
-        dots[i].className = dots[i].className.replace(" quoteactive", "");
+    function currentSlide(n) {
+        slideIndex = n - 1;
+        showSlides();
     }
-    
-    slides[slideIndex - 1].style.display = "block";
-    dots[slideIndex - 1].className += " quoteactive";
-    setTimeout(showSlides, 2000); // Change image every 2 seconds
-}
+
+    // Expose functions to global scope for onclick handlers
+    window.plusSlides = plusSlides;
+    window.currentSlide = currentSlide;
+
+    // Start slideshow
+    showSlides();
+}());
