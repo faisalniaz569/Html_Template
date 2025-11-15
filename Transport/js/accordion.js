@@ -1,11 +1,14 @@
 /* Accordion */
+/* jslint browser: true */
+/* global document */
 
-var acc = document.getElementsByClassName("accordion");
-var i;
+var document;
 
-
-for (i = 0; i < acc.length; i++) {
-    acc[i].addEventListener("click", function () {
+(function () {
+    "use strict";
+    var acc, i;
+    acc = document.getElementsByClassName("accordion");
+    function toggleAccordion() {
         this.classList.toggle("accactive");
         var panel = this.nextElementSibling;
         if (panel.style.maxHeight) {
@@ -13,5 +16,9 @@ for (i = 0; i < acc.length; i++) {
         } else {
             panel.style.maxHeight = panel.scrollHeight + "px";
         }
-    });
-}
+    }
+
+    for (i = 0; i < acc.length; i += 1) {
+        acc[i].addEventListener("click", toggleAccordion);
+    }
+}());
