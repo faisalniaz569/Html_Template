@@ -1,3 +1,5 @@
+var $;
+
 // Carousel
 $(".owl-carousel").owlCarousel({
     loop: true,
