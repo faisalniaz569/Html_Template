@@ -1702,13 +1702,14 @@ input[type=text], select, textarea {
 }
 
 .inputinfo button {
-    width: 100%;
+    width: 48%;
     background-color: #158415;
     border: 2px solid #158415;
     padding: 8px;
     color: #FFF9F9;
     font-size: 15px;
     cursor: pointer;
+    margin: 4px;
 }
 
 .inputbg {
@@ -1748,6 +1749,13 @@ input[type=text], select, textarea {
     margin-left: 40px;
     line-height: 25px;
 }
+
+.button-group .reset-btn {
+    background-color: #dc3545;
+    color: white;
+    border: 2px solid #dc3545;
+}
+
 
 
 /*===  Footer ===*/
