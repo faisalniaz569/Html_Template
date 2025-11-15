@@ -88,7 +88,7 @@
         </svg>
     </div>
 
-    <!--Contactarea-->
+    <!-- Contact Form Section -->
     <div class="contactform">
         <div class="container">
             <div class="row">
@@ -121,26 +121,32 @@
                         </div>
                         <div class="column">
                             <div class="inputinfo inputbg">
-                                <form action="#" method="post" onsubmit="return validateForm();">
-                                    <label for="fname">First Name</label>
-                                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                                <form action="#" method="post" onsubmit="return handleSubmit(event)">
+                                    <label for="fname">First Name *</label>
+                                    <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
 
-                                    <label for="lname">Last Name</label>
-                                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                                    <label for="lname">Last Name *</label>
+                                    <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
 
-                                    <label for="country">Country</label>
-                                    <select id="country" name="country">
+                                    <label for="country">Country *</label>
+                                    <select id="country" name="country" required>
+                                        <option value="">Select Country</option>
                                         <option value="australia">Australia</option>
                                         <option value="canada">Canada</option>
                                         <option value="usa">USA</option>
                                     </select>
 
-                                    <label for="contact-subject">Subject</label>
-                                    <textarea id="contact-subject" name="subject" placeholder="Write something.."></textarea>
+                                    <label for="contact-subject">Subject *</label>
+                                    <textarea id="contact-subject" name="subject" placeholder="Write something.." style="height:200px" required></textarea>
 
-                                    <button type="submit">
-                                        <i class="fas fa-rocket"></i> Send Message
-                                    </button>
+                                    <div class="button-group">
+                                        <button type="submit" class="submit-btn">
+                                            <i class="fas fa-rocket"></i> Send Message
+                                        </button>
+                                        <button type="reset" class="reset-btn">
+                                            <i class="fas fa-times-circle"></i> Clear Form
+                                        </button>
+                                    </div>
                                 </form>
                             </div>
                         </div>
@@ -150,6 +156,7 @@
             </div>
         </div>
     </div>
+
 
     <!--Transportdetails-->
     <div class="transportdetails">
