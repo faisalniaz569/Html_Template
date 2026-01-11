@@ -141,7 +141,7 @@ button {
 .Left_skewdropdownmenu {
     width: 100%;
     height: 50px;
-    background-color: #865036;
+    background-color: #E056A5;
     position: relative;
     font-family: mySecondFont;
     z-index: 2;
@@ -185,7 +185,7 @@ button {
 
 .dropdown-content {
     display: none;
-    background-color: #865036;
+    background-color: #E056A5;
     min-width: 200px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 2;
@@ -240,15 +240,15 @@ button {
 .Left_skewdropdownmenu li a:hover:not(.active),
 .Left_skewdropdownmenu li a:hover,
 .dropdown:hover .dropbtn {
-    background-color: #e6bb9c;
-    color: #5D4037;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
     font-weight: bold;
     cursor: pointer;
 }
 
 .Left_skewdropdownmenu li a.active {
-    background-color: #e6bb9c;
-    color: #5D4037;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
     font-weight: bold;
 }
 
@@ -258,7 +258,7 @@ button {
 }
 
 .Left_skewdropdownmenu li.split:hover a {
-    color: #e6bb9c;
+    color: rgba(0, 0, 0, 0.2);
     background-color: transparent;
 }
 
@@ -287,8 +287,8 @@ button {
 
 /*=== HEAD ===*/
 #head {
-    background-color: #deccaa;
-    color: #5a3e2b;
+    background-color: #E74C3C;
+    color: white;
     height: auto;
     text-align: center;
     padding: 50px;
@@ -296,7 +296,7 @@ button {
 
 .headtop {
     height: 50px;
-    background-color: #140c0d;
+    background-color: black;
 }
 
 
@@ -305,7 +305,7 @@ button {
 .topsocialicons { float: right; }
 
 .topsocialicons .fab {
-    color: darkgray;
+    color: #E3F2FD;
     padding: 18px;
     font-size: 14px;
     width: 50px;
@@ -439,7 +439,7 @@ button {
 }
 
 .blog_post2 .gallery {
-    height: 530px;
+    height: 550px;
     border: 1px solid #38aee0;
 }
 
@@ -454,11 +454,11 @@ button {
     left: 0;
     width: 100px;
     height: 50%;
-    background-color: #667292;
+    background-color: #9B59B6;
 }
 
 .iconblock i {
-    color: #b0c4de;
+    color: white;
     padding: 35px;
     font-size: 30px;
     text-align: center;
@@ -475,7 +475,7 @@ button {
 }
 
 .btn1 {
-    background-color: #f8ac3a;
+    background-color: #E74C3C;
     color: white;
     margin: 5px 0;
     font-weight: 600;
@@ -483,12 +483,13 @@ button {
 }
 
 .btn1:hover {
-    background-color: LightSeaGreen;
-    color: ivory;
+    background-color: #FF9F41;
+    color: #804000;
     transition: all 1s ease;
 }
 
 .btn3 {
+    float: right;
     background-color: cadetblue;
     color: white;
     margin: 5px 0;
@@ -520,6 +521,11 @@ button {
     background-size: cover;
 }
 
+.angledivshape::before,
+.angledivshape::after {
+    background-color: #9B59B6;  
+}
+
 .angledivshape::before {
     content: '';
     width: 50%;
@@ -527,14 +533,12 @@ button {
     position: absolute;
     top: 0;
     right: 0;
-    background-color: #5EFC8D;
 }
 
 .angledivshape::after {
     content: '';
     width: 20%;
     height: 100%;
-    background-color: #5EFC8D;
     clip-path: polygon(0% 0%, 100% 0%, 100% 105%);
     position: absolute;
     top: 0;
@@ -548,7 +552,7 @@ button {
     width: 50%;
     height: 100%;
     padding: 20px 50px;
-    color: #3d2b1f;
+    color: white;
 }
 
 .maintextarea p {
@@ -574,8 +578,8 @@ textarea {
 
 .btn2 {
     width: 100%;
-    background-color: #0b6623;
-    color: beige;
+    background-color: #FF5722;
+    color: white;
     font-weight: 600;
     border-radius: 4px;
     text-transform: capitalize;
@@ -615,7 +619,7 @@ textarea {
 }
 
 .accordion {
-    background-color: dodgerblue;
+    background-color: #2196F3;
     color: white;
     position: relative;
     cursor: pointer;
@@ -646,7 +650,7 @@ textarea {
     color: white;
     font-weight: bold;
     text-align: center;
-    background-color: navy;
+    background-color: #0d47a1;
     float: left;
     width: 50px;
     height: 50px;
@@ -665,7 +669,7 @@ textarea {
     position: absolute;
     top: 0;
     left: 50px;
-    border-left: 25px solid navy;
+    border-left: 25px solid #0d47a1;
     background: transparent;
     border-top: 50px solid transparent;
 }
@@ -745,8 +749,8 @@ textarea {
 /*===  transportdetails section ===*/
 
 .transportdetails {
-    background-color: #bccad6;
-    color: #34495e;
+    background-color: #8E44AD;
+    color: white;
 }
 
 .aboutus, .information, .transportoffice {
@@ -759,7 +763,7 @@ textarea {
 }
 
 .foot_title1, .foot_title2, .foot_title3 {
-    background-color: #4B3869;
+    background-color: #1565c0;
     width: 150px;
     height: 50px;
     padding: 5px 15px;
@@ -792,7 +796,7 @@ textarea {
 }
 
 .foot_title1 svg polygon, .foot_title2 svg polygon, .foot_title3 svg polygon {
-    fill: #4B3869;
+    fill: #1565c0;
     stroke: transparent;
 }
 
@@ -809,7 +813,7 @@ textarea {
 }
 
 .transportdetails span i:hover {
-    color: #27ae60;
+    color: chartreuse;
     cursor: pointer;
     transform: rotate(360deg);
     transition: all 0.3s linear 0.1s;
@@ -824,7 +828,7 @@ textarea {
 .footerinfolistone > ul > li,
 .footerinfolisttwo > ul > li {
     display: block;
-    color: #34495e;
+    color: white;
     text-align: left;
     padding-bottom: 10px;
     text-decoration: none;
@@ -834,7 +838,7 @@ textarea {
 .footerinfolistone li::before,
 .footerinfolisttwo li::before {
     content: '\f30b';
-    color: #31817b;
+    color: white;
     margin-right: 10px;
 }
 
@@ -1440,7 +1444,7 @@ q {
 }
 
 .blog_post2 .iconblock span.month, .blog_post2 .iconblock span.year {
-    color: #bccad6;
+    color: #d5b8e0;
 }
 
 .blogpostimgone .dates span.date, .blog_post2 .center .date {
@@ -1760,7 +1764,7 @@ input[type=text], select, textarea {
 
 /*===  Footer ===*/
 .footer {
-    background-color: #8d9db6;
+    background-color: #674EA7;
     color: white;
     font-family: mySecondFont;
     height: 50px;
