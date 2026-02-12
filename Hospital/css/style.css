@@ -36,6 +36,12 @@ body {
 /* Html behavior */
 html { scroll-behavior: smooth; }
 
+h1, h2, h3, h4 {
+    color: #1a1a1a;
+    font-weight: 600;
+}
+
+
 p {
     font-family: 'mySecondFont';
     line-height: 1.6;
@@ -55,7 +61,8 @@ p {
 
 
 /*===== 2 Columns layout =====*/
-.headtop .column, .hospitalquestionanswer .column, .healthytips .column, .doctorlist .column, .breadcumbwrapper .column, .appointmentpaper .column, .maincontact .column {
+.headtop .column, .hospitalquestionanswer .column, .healthytips .column, 
+.doctorlist .column, .breadcumbwrapper .column, .appointmentpaper .column, .maincontact .column {
     width: 50%;
     float: left;
     padding: 5px;
@@ -94,23 +101,28 @@ p {
 
 .menubar {
     overflow: hidden;
-    background-color: #cfcd33;
+    background-color: white;
 }
 
 .menubar a {
     float: left;
-    color: #7c7a1d;
+    color: #1F2D1E;
     text-align: center;
+    border-bottom: 1px solid #E5E5E5;
     padding: 20px;
     text-decoration: none;
     font-size: 18px;
-    font-weight: bold;
+    font-weight: 500;
     line-height: 35px;
 }
 
-.menubar a:hover, .menubar a.active {
-    background-color: #7a8b24;
-    color: #f0f5d6;
+.menubar a:hover {
+    color: #004208;
+    border-bottom: 2px solid #10631A; 
+}
+
+.menubar a.active {
+    border-bottom: 2px solid #10631A;
 }
 
 .menubar a.logo {
@@ -155,16 +167,17 @@ p {
 /* headtop */
 
 .headtop {
-    background-color: #9caa58;
-    height: 50px;
+  background-color: #8FAF5A;
+  color: white;
 }
+
 
 .headtop .policies ul li, .headtop .topbarcontact ul li { float: left; }
 
 .headtop .policies ul li a, .headtop .topbarcontact ul li a {
     text-decoration: none;
     display: block;
-    color: #e1e5cc;
+    color: white;
     margin: 8px 0;
     padding-right: 10px;
     text-align: left;
@@ -178,7 +191,11 @@ p {
 
 /* Healthissue section */
 
-.healthissue, .accordionarea { margin: 50px 0; }
+.healthissue, .accordionarea, .hospitalhistory {
+    padding: 50px 0;
+    background-color: #F4F7F2;
+    color: #1C1C1C;
+}
 
 .healthissue .technology i {
     font-size: 35px;
@@ -197,18 +214,28 @@ p {
     margin-bottom: 10px;
 }
 
-/* Hospitalquestionanswer section */
-.hospitalquestionanswer, .healthytips {
-    background-color: #f9c37a;
+.hero-img{
+    width: 100%;
     height: auto;
-    margin-top: 50px;
+    display: block;
 }
+
+/* Hospitalquestionanswer section */
+.healthytips {
+    background-color: #E8F0E1;
+    height: auto;
+}
+
+.hospitalquestionanswer { background-color: #E8F0E1; height: auto; }
+
+.hospitalquestionanswer p { color: #5C6E5B; }
+
 
 /* Accordion style */
 
 .accordion {
-    background-color: #fde3a7;
-    color: #3e2c1c;
+    background-color: #417C81;
+    color: white;
     cursor: pointer;
     width: 100%;
     border: none;
@@ -257,14 +284,27 @@ p {
     background-color: white;
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.2s ease-out;
-    -webkit-transition: max-height 1s ease-out; /* Webkit */
-    -moz-transition: max-height 1s ease-out; /* Mozilla */
-    -ms-transition: max-height 1s ease-out; /* Internet Explorer */
-    -o-transition: max-height 1s ease-out; /* Opera */
+    transition: max-height 0.4s ease;
+    -webkit-transition: max-height 1s ease; /* Webkit */
+    -moz-transition: max-height 1s ease; /* Mozilla */
+    -ms-transition: max-height 1s ease; /* Internet Explorer */
+    -o-transition: max-height 1s ease; /* Opera */
+}
+
+.panel p{
+    padding: 20px;
 }
 
 .accordion span { font-family: 'myFirstFont'; }
+
+.accordionarea{
+    max-width: 900px;
+    margin: 50px auto;
+}
+
+.faq-item {
+    margin: 50px 0;
+}
 
 
 /* Whyus */
@@ -358,7 +398,7 @@ p {
 .feature_box .text_content { margin: 20px 0; }
 
 .text_content h3 {
-    color: #925607;
+    color: #1F2D1E;
     margin: 0;
     font-size: 18px;
     font-weight: bold;
@@ -366,13 +406,11 @@ p {
 
 .text_content p {
     margin: 5px 0 0;
-    color: #492b03;
+    color: #5C6E5B;
     font-size: 14px;
 }
 
 /* History section */
-
-.hospitalhistory { margin-top: 50px; }
 
 .hospitalhistory .heading { margin-bottom: 10px; }
 
@@ -398,14 +436,14 @@ p {
 .healthytips .tips ul li::before {
     content: '\f484';
     float: left;
-    color: #aa6408;
+    color: #5C6E5B;
 }
 
 .healthytips .tips ul li a {
     text-decoration: none;
     font-family: 'mySecondFont';
     display: block;
-    color: #492b03;
+    color: #5C6E5B;
     font-size: 16px;
     margin-bottom: 15px;
     margin-right: 30px;
@@ -448,10 +486,21 @@ p {
 /* Hospitalmedia area */
 
 .hospitalmedia {
-    background-color: #8F4405;
-    color: #fcd5b5;
+    background-color: #F7F9F4;
+    color: #1F2D1E;
     padding: 30px 0;
+    font-weight: 400;
 }
+
+.hospitalmedia h2 {
+  color: #8FAF5A;
+}
+
+.hospitalmedia p {
+  color: #5C6E5B;
+}
+
+.hospitalmedia a { color: #1F2D1E; }
 
 
 /*==================================
@@ -474,6 +523,11 @@ p {
     margin-bottom: 10px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.doctor_card:hover {
+    transform: scale(1.05);
+    transition: .3s ease;
 }
 
 .profile_img {
@@ -678,8 +732,8 @@ form.example button:hover {
 
 .appointmentpaper button {
     float: right;
-    background-color: darkseagreen;
-    color: darkolivegreen;
+    background-color: #84C68C;
+    color: #10631A;
     font-weight: bold;
 }
 
@@ -999,8 +1053,8 @@ textarea { height: 100px; }
 
 /*==== Footer ====*/
 .footer {
-    background-color: #4c281a;
-    color: #ebd1c6;
+    background-color: #1F2D1E;
+    color: white;
     height: 50px;
 }
 
@@ -1009,11 +1063,3 @@ textarea { height: 100px; }
     text-align: center; 
     line-height: 50px;
 }
-
-
-
-
-
-
-
-
