@@ -167,7 +167,7 @@ p {
 /* headtop */
 
 .headtop {
-  background-color: #8FAF5A;
+  background-color: #1258DC;
   color: white;
 }
 
@@ -222,11 +222,11 @@ p {
 
 /* Hospitalquestionanswer section */
 .healthytips {
-    background-color: #E8F0E1;
+    background-color: #F7F4D4;
     height: auto;
 }
 
-.hospitalquestionanswer { background-color: #E8F0E1; height: auto; }
+.hospitalquestionanswer { background-color: #F7F4D4; height: auto; }
 
 .hospitalquestionanswer p { color: #5C6E5B; }
 
@@ -398,7 +398,7 @@ p {
 .feature_box .text_content { margin: 20px 0; }
 
 .text_content h3 {
-    color: #1F2D1E;
+    color: #413c0c;
     margin: 0;
     font-size: 18px;
     font-weight: bold;
@@ -406,7 +406,7 @@ p {
 
 .text_content p {
     margin: 5px 0 0;
-    color: #5C6E5B;
+    color: #413c0c;
     font-size: 14px;
 }
 
@@ -436,14 +436,14 @@ p {
 .healthytips .tips ul li::before {
     content: '\f484';
     float: left;
-    color: #5C6E5B;
+    color: #413c0c;
 }
 
 .healthytips .tips ul li a {
     text-decoration: none;
     font-family: 'mySecondFont';
     display: block;
-    color: #5C6E5B;
+    color: #413c0c;
     font-size: 16px;
     margin-bottom: 15px;
     margin-right: 30px;
@@ -486,18 +486,20 @@ p {
 /* Hospitalmedia area */
 
 .hospitalmedia {
-    background-color: #F7F9F4;
-    color: #1F2D1E;
-    padding: 30px 0;
-    font-weight: 400;
+    background-color: #F7F4D4;
+    padding: 60px 0;
 }
 
-.hospitalmedia h2 {
-  color: #8FAF5A;
+.hospitalmedia h2{
+    color:#091834;
 }
 
-.hospitalmedia p {
-  color: #5C6E5B;
+.hospitalmedia p{
+    color:#333;
+}
+
+.hospitalmedia i{
+    color:#EA202C;
 }
 
 .hospitalmedia a { color: #1F2D1E; }
@@ -968,11 +970,6 @@ form.example button:hover {
 
 .maincontact { margin: 20px 0; }
 
-.form-group {
-    margin-bottom: 15px;
-    overflow: hidden;
-}
-
 .form-group label {
     display: block;
     font-weight: bold;
@@ -1053,7 +1050,7 @@ textarea { height: 100px; }
 
 /*==== Footer ====*/
 .footer {
-    background-color: #1F2D1E;
+    background-color: #091834;
     color: white;
     height: 50px;
 }
